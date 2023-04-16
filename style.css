@@ -73,7 +73,7 @@ nav {
 }
 /* Hero Section */
 
-#main_section {
+#hero_section {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
@@ -86,17 +86,17 @@ nav {
   );
 }
 
-#main_head_div {
+#hero_head_div {
   width: 60%;
   height: 100%;
 }
 
-#main_head_img {
+#hero_head_img {
   width: 40%;
   height: 100%;
 }
 
-#main_section_heading {
+#hero_section_heading {
   position: absolute;
   left: 5.24%;
   right: 20.28%;
@@ -110,7 +110,7 @@ nav {
   color: #000000;
 }
 
-#main_section_tagline {
+#hero_section_tagline {
   position: absolute;
   left: 5.24%;
   right: 60.99%;
@@ -125,7 +125,7 @@ nav {
   color: #000000;
 }
 
-#main_section_image {
+#hero_section_image {
   width: 95%;
   margin-right: 5%;
 }
