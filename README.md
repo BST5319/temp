@@ -1,4 +1,4 @@
 # Student_Resource_Management
-
-Empty!
 Nav Bar Complete :)
+Hero-Section Complete :)
+
