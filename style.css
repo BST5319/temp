@@ -72,7 +72,8 @@ nav {
 .nav-button a :active {
   text-decoration: underline white;
 }
-.nav-button a:hover {
+.nav-button a:hover,
+.nav-button a:active {
   background-color: var(--secondary-button-color);
   color: var(--primary-color) !important;
 }
@@ -98,25 +99,51 @@ section.hero_section {
 #hero-left {
   flex-wrap: wrap;
   max-width: 50vw;
-}
-#hero-right {
-  flex-basis: 500px;
-  align-self: flex-end;
+  overflow: hidden;
+  height: ;
 }
 #hero-section-heading {
+  display: block;
   margin-top: 65px;
   font-weight: 700;
   font-size: 2.5rem;
   color: #000000;
+  overflow: hidden;
 }
 #hero-section-tagline {
   display: block;
   font-size: 32px;
   color: #000000;
+  overflow: hidden;
+}
+#hero-right {
+  flex-basis: 500px;
+  align-self: flex-end;
 }
 #hero-image {
   width: 500px;
 }
+/* Announcement */
+section.announcement {
+  background-color: var(--secondary-button-color);
+  color: var(--primary-color);
+  width: 100vw;
+  border: 8px solid var(--primary-color);
+}
+.announcement-body {
+  text-align: ;
+}
+.anc-heading {
+  padding: 50px 0px;
+  text-align: center;
+}
+ul.anc-body {
+  padding-bottom: 50px;
+}
+.line {
+  margin-bottom: 20px;
+}
+
 /* Footer */
 .footer {
   display: block;
