@@ -77,11 +77,12 @@ nav {
   background-color: var(--secondary-button-color);
   color: var(--primary-color) !important;
 }
+
 /* Hero Section */
 
 section.hero_section {
   width: 100vw;
-  height: 100vh;
+  overflow: hidden;
   background: linear-gradient(
     98.28deg,
     rgba(0, 255, 160, 0.7) 0.97%,
@@ -117,11 +118,10 @@ section.hero_section {
   overflow: hidden;
 }
 #hero-right {
-  flex-basis: 500px;
   align-self: flex-end;
 }
 #hero-image {
-  width: 500px;
+  width: 100%;
 }
 /* Announcement */
 section.announcement {
