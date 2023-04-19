@@ -28,6 +28,7 @@
     </nav>
 
     <main>
+      <!-- hero -->
       <section class="hero hero_section">
         <div class="container flex hero-content">
           <!-- Tagline -->
@@ -48,6 +49,7 @@
           </div>
         </div>
       </section>
+      <!-- announcement -->
       <section class="announcement">
         <div class="container announcement-body">
           <h1 class="anc-heading">Announcements</h1>
@@ -103,6 +105,60 @@
               quod aliquam voluptate.
             </li>
           </ul>
+        </div>
+      </section>
+      <!-- newsletter -->
+      <section class="newsletter">
+        <div class="container">
+          <h1 class="n-heading">Newsletter</h1>
+          <p class="n-para">
+            Subscribe to our newsletter to get updates regarding exams
+          </p>
+          <form class="form" action="">
+            <!-- name -->
+            <label for="name">Name</label>
+            <input
+              id="name"
+              class="in-field"
+              type="text"
+              placeholder="Enter your name"
+            />
+            <!-- branch -->
+            <label for="branch">Branch</label>
+            <select name="" id="branch" class="in-field">
+              <option value="select">--Select--</option>
+              <option value="cse">Computer</option>
+              <option value="elec">Electrical</option>
+              <option value="mech">Mechenical</option>
+              <option value="civil">Civil</option>
+            </select>
+            <!-- sem -->
+            <label for="sem">Sem</label>
+            <select class="in-field" name="" id="sem">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+            <!-- email -->
+            <label for="email">E-Mail</label>
+            <input
+              class="in-field"
+              type="email"
+              placeholder="Enter your e-mail"
+            />
+            <!-- submit button -->
+            <input
+              class="in-field"
+              id="submit"
+              type="submit"
+              value="SUBSCRIBE"
+            />
+          </form>
         </div>
       </section>
     </main>
