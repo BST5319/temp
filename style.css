@@ -150,6 +150,8 @@ footer.foot {
   height: 300px;
   width: 100vw;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 div.logo {
@@ -170,16 +172,11 @@ footer > p {
 }
 footer > hr {
   border-color: var(--secondary-button-color);
-  flex-basis: px;
+  align-self: stretch;
+  margin-inline: 140px;
 }
 p.cprt {
-  width: 1148px;
   font-size: 15px;
   font-weight: 300;
   text-align: center;
-}
-.hr {
-  background-color: var(--secondary-button-color);
-  height: 2px;
-  width: 1148px;
 }
