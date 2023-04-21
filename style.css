@@ -173,7 +173,7 @@ footer > p {
 footer > hr {
   border-color: var(--secondary-button-color);
   align-self: stretch;
-  margin-inline: 140px;
+  margin-inline: 100px;
 }
 p.cprt {
   font-size: 15px;
