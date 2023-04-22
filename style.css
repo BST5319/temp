@@ -78,7 +78,7 @@ nav {
   background-color: var(--secondary-button-color);
   color: var(--primary-color) !important;
 }
-.checkbtn{
+.checkbtn {
   color: white;
   float: right;
   font-size: 30px;
@@ -86,50 +86,50 @@ nav {
   display: none;
   cursor: pointer;
 }
-#check{
+#check {
   display: none;
 }
-@media (max-width:768px){
-    .container{
-      margin-inline: 5vw;
-    }
-    nav{
-      height: 60px;
-      background-color: #000000;
-    }
-    .main-nav{
-      display: block;
-    }
-    .nav-links ul{
-      margin-top: 5px;
-      position: fixed;
-      display: block;
-      min-width: 100vw;
-      background-color: #001219;
-      list-style: none;
-      text-align: center;
-      right: +100%;
-    }
-    .nav-button a{
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-    .templogo{
-      position: relative;
-    }
-    .checkbtn{
-      margin-top: 5px;
-      color: #78D2BD;
-      float: right;
-      font-size: 30px;
-      display: block;
-    }
-    #check:checked ~ .nav-links ul{
-      right: 0;
-    }
-    .hero-content{
-      padding-top: 60px;
-    }
+@media (max-width: 768px) {
+  .container {
+    margin-inline: 5vw;
+  }
+  nav {
+    height: 70px;
+    background-color: var(--primary-color);
+  }
+  .main-nav {
+    display: block;
+  }
+  .nav-links ul {
+    margin-top: 5px;
+    position: fixed;
+    display: block;
+    min-width: 100vw;
+    background-color: var(--primary-color);
+    list-style: none;
+    text-align: center;
+    right: +100%;
+  }
+  .nav-button a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .templogo {
+    position: relative;
+  }
+  .checkbtn {
+    margin-top: 5px;
+    color: var(--secondary-button-color);
+    float: right;
+    font-size: 30px;
+    display: block;
+  }
+  #check:checked ~ .nav-links ul {
+    right: 0;
+  }
+  .hero-content {
+    padding-top: 60px;
+  }
 }
 
 /* Hero Section */
