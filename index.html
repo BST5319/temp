@@ -116,15 +116,16 @@
           </p>
           <form class="form" action="">
             <!-- name -->
-            <label for="name">Name</label>
+            <label class="label" for="name">Name</label>
             <input
               id="name"
               class="in-field"
               type="text"
               placeholder="Enter your name"
             />
+            <hr>
             <!-- branch -->
-            <label for="branch">Branch</label>
+            <label class="label" for="branch">Branch</label>
             <select name="" id="branch" class="in-field">
               <option value="select">--Select--</option>
               <option value="cse">Computer</option>
@@ -133,7 +134,7 @@
               <option value="civil">Civil</option>
             </select>
             <!-- sem -->
-            <label for="sem">Sem</label>
+            <label class="label" for="sem">Sem</label>
             <select class="in-field" name="" id="sem">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -145,19 +146,18 @@
               <option value="8">8</option>
             </select>
             <!-- email -->
-            <label for="email">E-Mail</label>
-            <input
+            <hr>
+            <label  class="label" for="email">E-Mail</label>
+            <input id="email"
               class="in-field"
               type="email"
               placeholder="Enter your e-mail"
             />
             <!-- submit button -->
-            <input
-              class="in-field"
-              id="submit"
-              type="submit"
-              value="SUBSCRIBE"
-            />
+            <button 
+              class="in-field label"
+              id="submit">SUBSCRIBE</button>
+
           </form>
         </div>
       </section>
