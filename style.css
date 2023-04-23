@@ -290,3 +290,66 @@ p.cprt {
   font-weight: 300;
   text-align: center;
 }
+
+
+/* newslatter section  */
+
+section.newsletter {
+  width: 100vw;
+  background-color: var(--secondary-button-color);
+  color: var(--primary-color);
+  height: 300px;
+}
+h1.n-heading {
+  text-align: center;
+}
+p.n-para {
+  text-align: center;
+}
+.in-field {
+  display: inline;
+  border: var(--primary-color) 2px solid;
+  background-color: var(--secondary-button-color);
+  border-radius: 5px;
+  height: 32px;
+  font-size: 16px;
+  padding: 5px;
+  margin-right: 1.5%;
+}
+
+.form {
+
+  width: 35vw;
+  height: inherit; 
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.label{
+  display: inline-block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+#name {
+  width: 80%;
+  height: 32px;
+}
+
+#email{
+  width: 80%;
+}
+#submit{
+  background-color: var(--primary-color);
+  color: var(--secondary-button-color);
+  margin: auto;
+  width: 100%;
+  margin-top: 2.5%;
+ }
+
+ #branch{
+    width: 50%;
+ }
+
