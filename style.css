@@ -155,10 +155,6 @@ section.hero_section {
   flex-wrap: wrap;
   max-width: 50vw;
   overflow: hidden;
-<<<<<<< HEAD
-  /* height: ; */
-=======
->>>>>>> Newsletter
 }
 #hero-section-heading {
   display: block;
@@ -197,17 +193,7 @@ ul.anc-body {
 .line {
   margin-bottom: 20px;
 }
-
-/* Footer */
-.footer {
-  display: block;
-  height: 300px;
-  width: 100vw;
-  border: #000000 solid 2px;
-}
-
-/* newslatter section  */
-
+/* Newsletter */
 section.newsletter {
   width: 100vw;
   background-color: var(--secondary-button-color);
