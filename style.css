@@ -169,7 +169,7 @@ p.n-para {
 }
 .in-field {
   display: inline;
-  border-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
   background-color: var(--secondary-button-color);
   border-radius: 5px;
   height: 32px;
