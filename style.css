@@ -101,7 +101,6 @@ section.hero_section {
   flex-wrap: wrap;
   max-width: 50vw;
   overflow: hidden;
-  height: ;
 }
 #hero-section-heading {
   display: block;
@@ -129,9 +128,6 @@ section.announcement {
   color: var(--primary-color);
   width: 100vw;
   border: 8px solid var(--primary-color);
-}
-.announcement-body {
-  text-align: ;
 }
 .anc-heading {
   padding: 50px 0px;
@@ -179,7 +175,6 @@ p.n-para {
   height: 32px;
   font-size: 16px;
   padding: 5px;
-  display: ;
 }
 
 .form {
@@ -216,6 +211,7 @@ p.n-para {
 #branch {
   width: 50%;
 }
+
 /* Footer */
 footer.foot {
   background-color: var(--primary-color);
