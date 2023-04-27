@@ -23,6 +23,12 @@ body {
   --primary-button-color: #005f73;
   --primary-button-text-color: #e9d8a6;
   --secondary-button-color: #94d2bd;
+  --gradient_variable: linear-gradient(
+    98.28deg,
+    rgba(0, 255, 160, 0.7) 0.97%,
+    rgba(186, 0, 255, 0.433696) 47.61%,
+    rgba(20, 0, 255, 0) 87.94%
+  );
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -55,12 +61,10 @@ nav {
   border-radius: 25px;
   text-align: center;
 }
-.nav-links {
-  flex-basis: 800px;
-}
+
 .nav-links ul {
   min-width: fit-content;
-  justify-content: end;
+  justify-content: center;
   gap: 40px;
   list-style: none;
 }
@@ -94,7 +98,6 @@ nav {
     margin-inline: 5vw;
   }
   nav {
-    height: 70px;
     background-color: var(--primary-color);
   }
   .main-nav {
@@ -137,12 +140,7 @@ nav {
 section.hero_section {
   width: 100vw;
   overflow: hidden;
-  background: linear-gradient(
-    98.28deg,
-    rgba(0, 255, 160, 0.7) 0.97%,
-    rgba(186, 0, 255, 0.433696) 47.61%,
-    rgba(20, 0, 255, 0) 87.94%
-  );
+  background: var(--gradient_variable)
 }
 .hero-content {
   flex-wrap: nowrap;
