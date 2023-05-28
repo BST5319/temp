@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* Resets */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+/* No Scroll-bar */
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* variables */
+:root {
+  --primary-color: #001219;
+  --primary-button-color: #005f73;
+  --primary-button-text-color: #e9d8a6;
+  --secondary-button-color: #94d2bd;
+  --gradient_variable: linear-gradient(
+    98.28deg,
+    rgba(0, 255, 160, 0.7) 0.97%,
+    rgba(186, 0, 255, 0.433696) 47.61%,
+    rgba(20, 0, 255, 0) 87.94%
+  );
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* utilities */
+.container {
+  margin-inline: 5vw;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* nav-bar*/
+nav {
+  width: 100vw;
+  height: 60px;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.main-nav {
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.templogo {
+  height: 50px;
+  width: 50px;
+  background-color: var(--secondary-button-color);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.nav-links ul {
+  min-width: fit-content;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+.nav-button a {
+  color: var(--primary-button-text-color);
+  border-radius: 10px;
+  padding: 8px 24px;
+  transition: 0.4s ease-out;
+}
+.nav-button a :active {
+  text-decoration: underline white;
+}
+.nav-button a:hover,
+.nav-button a:active {
+  background-color: var(--secondary-button-color);
+  color: var(--primary-color) !important;
+}
+.checkbtn {
+  color: white;
+  float: right;
+  font-size: 30px;
+  /* margin-right: 10px; */
+  display: none;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
+@media (max-width: 768px) {
+  .container {
+    margin-inline: 5vw;
+  }
+  nav {
+    background-color: var(--primary-color);
+  }
+  .main-nav {
+    display: block;
+  }
+  .nav-links ul {
+    margin-top: 5px;
+    position: fixed;
+    display: block;
+    min-width: 100vw;
+    background-color: var(--primary-color);
+    list-style: none;
+    text-align: center;
+    right: +100%;
+  }
+  .nav-button a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .templogo {
+    position: relative;
+  }
+  .checkbtn {
+    margin-top: 5px;
+    color: var(--secondary-button-color);
+    float: right;
+    font-size: 30px;
+    display: block;
+  }
+  #check:checked ~ .nav-links ul {
+    right: 0;
+  }
+  .hero-content {
+    padding-top: 60px;
+  }
+}
+
+/* Hero Section */
+
+section.hero_section {
+  width: 100vw;
+  overflow: hidden;
+  background: var(--gradient_variable)
+}
+.hero-content {
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 50px;
+  align-content: center;
+  height: 100vh;
+}
+#hero-left {
+  flex-wrap: wrap;
+  max-width: 50vw;
+  overflow: hidden;
+}
+#hero-section-heading {
+  display: block;
+  margin-top: 65px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000000;
+  overflow: hidden;
+}
+#hero-section-tagline {
+  display: block;
+  font-size: 32px;
+  color: #000000;
+  overflow: hidden;
+}
+#hero-right {
+  align-self: flex-end;
+}
+#hero-image {
+  width: 100%;
+}
+/* Announcement */
+section.announcement {
+  background-color: var(--secondary-button-color);
+  color: var(--primary-color);
+  width: 100vw;
+  border: 8px solid var(--primary-color);
+}
+.anc-heading {
+  padding: 50px 0px;
+  text-align: center;
+}
+ul.anc-body {
+  padding-bottom: 50px;
+}
+.line {
+  margin-bottom: 20px;
+}
+/* Newsletter */
+section.newsletter {
+  width: 100vw;
+  background-color: var(--secondary-button-color);
+  color: var(--primary-color);
+  height: 300px;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+h1.n-heading {
+  text-align: center;
+}
+p.n-para {
+  text-align: center;
+}
+.in-field {
+  display: inline;
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-button-color);
+  border-radius: 5px;
+  height: 32px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.form {
+  width: 35vw;
+  height: inherit;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.label {
+  display: inline-block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+#name {
+  width: 80%;
+  height: 32px;
+}
+
+#email {
+  width: 80%;
+}
+#submit {
+  background-color: black;
+  color: white;
+  margin: auto;
+  width: 100%;
+  margin-top: 2.5%;
+}
+
+#branch {
+  width: 50%;
+}
+
+/* Footer */
+footer.foot {
+  background-color: var(--primary-color);
+  height: 300px;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+div.logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  background-color: var(--secondary-button-color);
+}
+footer > p {
+  color: var(--secondary-button-color);
+  font-weight: 700;
+  font-size: 32px;
+}
+.social-links {
+  justify-content: center;
+  align-items: center;
+  gap: 41px;
+}
+footer > hr {
+  border-color: var(--secondary-button-color);
+  align-self: stretch;
+  margin-inline: 100px;
+}
+p.cprt {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+/* newslatter section  */
+
+section.newsletter {
+  width: 100vw;
+  background-color: var(--secondary-button-color);
+  color: var(--primary-color);
+  height: 300px;
+}
+h1.n-heading {
+  text-align: center;
+}
+p.n-para {
+  text-align: center;
+}
+.in-field {
+  display: inline;
+  border: var(--primary-color) 2px solid;
+  background-color: var(--secondary-button-color);
+  border-radius: 5px;
+  height: 32px;
+  font-size: 16px;
+  padding: 5px;
+  margin-right: 1.5%;
+}
+
+.form {
+
+  width: 35vw;
+  height: inherit; 
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.label{
+  display: inline-block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+#name {
+  width: 80%;
+  height: 32px;
+}
+
+#email{
+  width: 80%;
+}
+#submit{
+  background-color: var(--primary-color);
+  color: var(--secondary-button-color);
+  margin: auto;
+  width: 100%;
+  margin-top: 2.5%;
+ }
+
+ #branch{
+    width: 50%;
+ }
+
