@@ -85,8 +85,9 @@ nav{
 .icon 
 {
   display: none;
+  cursor: pointer;
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 30px;
   color: #94d2bd;
 }
@@ -129,7 +130,7 @@ nav{
   }
   .icon{
     display: block;
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
   .icon.active
   {
@@ -141,7 +142,6 @@ nav{
     transform: rotate(-180deg);
     transition: transform ease-in-out 1s;
   }
-  
   .hero-content {
     padding-top: 60px;
   }
