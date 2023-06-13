@@ -41,8 +41,7 @@ body {
   display: flex;
   align-items: center;
 }
-/* nav-bar*/
-nav {
+nav{
   width: 100vw;
   height: 60px;
   background-color: var(--primary-color);
@@ -50,48 +49,46 @@ nav {
   top: 0px;
   left: 0px;
 }
-.main-nav {
-  justify-content: space-between;
-  margin-top: 4px;
-}
 .templogo {
   height: 50px;
   width: 50px;
   background-color: var(--secondary-button-color);
   border-radius: 25px;
   text-align: center;
+  margin-left: 60px;
 }
-
-.nav-links ul {
-  min-width: fit-content;
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links{
+  float: right;
+  display: inline;
+  margin-right: 50px;
+}
+.nav-buttons{
+  list-style-type: none;
   justify-content: center;
   gap: 40px;
-  list-style: none;
 }
-.nav-button a {
+.nav-buttons a {
   color: var(--primary-button-text-color);
   border-radius: 10px;
   padding: 8px 24px;
   transition: 0.4s ease-out;
 }
-.nav-button a :active {
-  text-decoration: underline white;
-}
-.nav-button a:hover,
-.nav-button a:active {
+.nav-buttons a:hover,
+.nav-buttons a:active {
   background-color: var(--secondary-button-color);
   color: var(--primary-color) !important;
 }
-.checkbtn {
-  color: white;
-  float: right;
-  font-size: 30px;
-  /* margin-right: 10px; */
+.icon 
+{
   display: none;
-  cursor: pointer;
-}
-#check {
-  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #94d2bd;
 }
 @media (max-width: 768px) {
   .container {
@@ -103,40 +100,57 @@ nav {
   .main-nav {
     display: block;
   }
-  .nav-links ul {
-    margin-top: 5px;
-    position: fixed;
+   .nav-links.active ul{
+    position: absolute;
+    justify-content: center;
+    top: 60px;
+    left: 0px;
+    right: 0px;
     display: block;
     min-width: 100vw;
     background-color: var(--primary-color);
     list-style: none;
     text-align: center;
-    right: +100%;
   }
-  .nav-button a {
+  .nav-links.inactive {
+    display: none;
+  }
+  .nav-buttons.active a {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .nav-buttons.inactive a {
+    display: none;
+  }
   .templogo {
+    margin-left: 40px;
     position: relative;
-  }
-  .checkbtn {
     margin-top: 5px;
-    color: var(--secondary-button-color);
-    float: right;
-    font-size: 30px;
+  }
+  .icon{
     display: block;
+    margin-right: 20px;
   }
-  #check:checked ~ .nav-links ul {
-    right: 0;
+  .icon.active
+  {
+    display: block;
+    transform: rotate(180deg);
+    transition: transform ease-in-out 1s;
+  } 
+  .icon.inactive{
+    transform: rotate(-180deg);
+    transition: transform ease-in-out 1s;
   }
+  
   .hero-content {
     padding-top: 60px;
   }
 }
 
 /* Hero Section */
-
+.hero-content {
+  padding-top: 60px;
+}
 section.hero_section {
   width: 100vw;
   overflow: hidden;
