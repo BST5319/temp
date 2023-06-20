@@ -3,7 +3,6 @@ const navlinks = document.querySelector('.nav-links');
 const navbuttons = document.querySelector('.nav-buttons');
 
 icon.addEventListener('click', () => {
-    icon.classList.remove('off');
     if (icon.classList.contains('active')) {
         navlinks.classList.remove('active');
         navlinks.classList.add('inactive');

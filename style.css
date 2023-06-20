@@ -41,7 +41,7 @@ body {
   display: flex;
   align-items: center;
 }
-nav{
+nav {
   width: 100vw;
   height: 60px;
   background-color: var(--primary-color);
@@ -57,16 +57,16 @@ nav{
   text-align: center;
   margin-left: 60px;
 }
-.main-nav{
+.main-nav {
   display: flex;
   justify-content: space-between;
 }
-.nav-links{
+.nav-links {
   float: right;
   display: inline;
   margin-right: 50px;
 }
-.nav-buttons{
+.nav-buttons {
   list-style-type: none;
   justify-content: center;
   gap: 40px;
@@ -82,8 +82,7 @@ nav{
   background-color: var(--secondary-button-color);
   color: var(--primary-color) !important;
 }
-.icon 
-{
+.icon {
   display: none;
   cursor: pointer;
   position: absolute;
@@ -101,7 +100,7 @@ nav{
   .main-nav {
     display: block;
   }
-   .nav-links.active ul{
+  .nav-links.active ul {
     position: absolute;
     justify-content: center;
     top: 60px;
@@ -112,13 +111,40 @@ nav{
     background-color: var(--primary-color);
     list-style: none;
     text-align: center;
+    animation: nav-links-active;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: -1;
   }
-  .nav-links.inactive {
+  @keyframes nav-links-active {
+    0% {
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+  .nav-links.inactive ul {
     display: none;
   }
   .nav-buttons.active a {
     margin-top: 10px;
     margin-bottom: 10px;
+    animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 0.2s;
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
   .nav-buttons.inactive a {
     display: none;
@@ -128,19 +154,16 @@ nav{
     position: relative;
     margin-top: 5px;
   }
-  .icon{
-    display: block;
-    /* margin-right: 20px; */
-  }
-  .icon.active
-  {
+  .icon.active {
+    content: url("Home_page/Assets/Nav/xmark-solid.svg");
     display: block;
     transform: rotate(180deg);
-    transition: transform ease-in-out 1s;
-  } 
-  .icon.inactive{
+    transition: transform ease-in-out 0.4s;
+  }
+  .icon.inactive {
+    display: block;
     transform: rotate(-180deg);
-    transition: transform ease-in-out 1s;
+    transition: transform ease-in-out 0.4s;
   }
   .hero-content {
     padding-top: 60px;
@@ -154,7 +177,7 @@ nav{
 section.hero_section {
   width: 100vw;
   overflow: hidden;
-  background: var(--gradient_variable)
+  background: var(--gradient_variable);
 }
 .hero-content {
   flex-wrap: nowrap;
@@ -305,7 +328,6 @@ p.cprt {
   text-align: center;
 }
 
-
 /* newslatter section  */
 
 section.newsletter {
@@ -332,16 +354,15 @@ p.n-para {
 }
 
 .form {
-
   width: 35vw;
-  height: inherit; 
+  height: inherit;
   margin: auto;
   justify-content: center;
   align-items: center;
   margin-top: 2%;
 }
 
-.label{
+.label {
   display: inline-block;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -352,18 +373,17 @@ p.n-para {
   height: 32px;
 }
 
-#email{
+#email {
   width: 80%;
 }
-#submit{
+#submit {
   background-color: var(--primary-color);
   color: var(--secondary-button-color);
   margin: auto;
   width: 100%;
   margin-top: 2.5%;
- }
+}
 
- #branch{
-    width: 50%;
- }
-
+#branch {
+  width: 50%;
+}
